@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Luv 2 Play Calgary</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
+  <!-- <style>
     .video-bg {
       position: absolute;
       top: 0;
@@ -15,20 +15,26 @@
       object-fit: cover;
       z-index: -1;
     }
-  </style>
+  </style> -->
 </head>
 <body class="text-white">
 
   <!-- Hero with Video Background -->
   <section class="relative h-screen overflow-hidden bg-black">
-    <video class="video-bg" autoplay muted loop>
-      <source src="your-video.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+    <video 
+    class="unfixed top-0 left-0 w-full h-full object-cover -z-10" 
+    autoplay 
+    muted 
+    loop 
+    playsinline
+  >
+    <source src="./video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
     
     <!-- Navigation -->
     <header class="absolute top-0 left-0 w-full flex justify-between items-center p-6 z-10 bg-black bg-opacity-50">
-      <img src="logo.png" alt="Luv 2 Play Logo" class="h-12">
+      <img src="logo2.png" alt="Luv 2 Play Logo" class="h-15 w-16">
       <nav class="space-x-6 text-lg">
         <a href="#about" class="hover:underline">About</a>
         <a href="#features" class="hover:underline">Features</a>
